@@ -1,0 +1,21 @@
+---------------------------------------------------------------
+PRECISION = 32-bit Single Precision
+Benchmark REPEAT = 5
+---------------------------------------------------------------
+device_id = 0
+check_result = 0
+A: -------------- ./datasets/jagmesh2/jagmesh2.mtx --------------
+input matrix A: ( 1009, 1009 ) nnz = 6865
+B: -------------- ./datasets/jagmesh2/jagmesh2.mtx --------------
+input matrix B: ( 1009, 1009 ) nnz = 6865
+SpGEMM flops = 47075.
+---------------------------------------------------------------
+Device [ 0 ] NVIDIA GeForce RTX 2060 SUPER @ 1650.00 MHz
+
+--------------- SpGEMM (using cuSPARSE) ---------------
+ - cuda SpGEMM start! Benchmark runs 5 times.
+ - cuda SpGEMM completed!
+
+nnzC = 18179, nnzCub = 47075, Compression rate = 2.59
+CUDA  cuSPARSE SpGEMM runtime is 3.1450 ms, GFlops = 0.0299
+---------------------------------------------------------------

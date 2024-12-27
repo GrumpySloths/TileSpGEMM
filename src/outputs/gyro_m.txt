@@ -4,24 +4,24 @@ device_id = 0
 Device [ 0 ] NVIDIA GeForce RTX 2060 SUPER @ 1650.00 MHz
 MAT: -------------- ../datasets/gyro_m/gyro_m.mtx --------------
 input matrix A: ( 17361, 17361 ) nnz = 340431
- loadfile time    = 0.05029 sec
+ loadfile time    = 0.06762 sec
 the tilesize = 16
 SpGEMM nnzCub = 8657751
-CSR to Tile conversion uses 9.15 ms
+CSR to Tile conversion uses 3.57 ms
 tile space overhead = 4.98 MB
 step1 ----Calculate the number and tile-column index of tiles of matrixC---
-step1 ---------------------- Runtime is  2.11 ms-------------------------
+step1 ---------------------- Runtime is  2.02 ms-------------------------
 
 step2 --------Calculate the number of nonzeros of each tile of matrixC-----
-step2 ---------------------- Runtime is  1.82 ms-------------------------
+step2 ---------------------- Runtime is  1.80 ms-------------------------
 
 step3 ---------Calculate the val&col of nonzeros of matrixC-------------
-step3 ---------------------- Runtime is  3.69 ms------------------------
+step3 ---------------------- Runtime is  4.13 ms------------------------
 
------------------------Malloc uses 2.14 ms-------------------------------
+-----------------------Malloc uses 2.17 ms-------------------------------
 Non-empty tiles of C = 197992
-nnzC = 2084095
-CUDA  TileSpGEMM runtime is 9.76 ms, gflops = 1.77
+nnzC = 2083518
+CUDA  TileSpGEMM runtime is 10.14 ms, gflops = 1.71
 -------------------------------check----------------------------------------
 tile to CSR conversion complete!
 
@@ -30,11 +30,11 @@ tile to CSR conversion complete!
  - cuda SpGEMM completed!
 
 nnzC = 1925973, nnzCub = 8657751, Compression rate = 4.50
-CUDA  cuSPARSE SpGEMM runtime is 23.0370 ms, GFlops = 0.7516
+CUDA  cuSPARSE SpGEMM runtime is 29.1080 ms, GFlops = 0.5949
 
 Validating results...
-[NOT PASSED] nnzC = 1925973, nnzC_golden = 2084095
+[NOT PASSED] nnzC = 1925973, nnzC_golden = 2083518
 [NOT PASSED] row_pointer, #err = 17361
-[NOT PASSED] column_index & value, #err = 1925234 (99.96% #nnz)
+[NOT PASSED] column_index & value, #err = 1925256 (99.96% #nnz)
 ---------------------------------------------------------------
 ---------------------------------------------------------------

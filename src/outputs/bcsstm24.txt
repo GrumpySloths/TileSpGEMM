@@ -4,24 +4,24 @@ device_id = 0
 Device [ 0 ] NVIDIA GeForce RTX 2060 SUPER @ 1650.00 MHz
 MAT: -------------- ../datasets/bcsstm24/bcsstm24.mtx --------------
 input matrix A: ( 3562, 3562 ) nnz = 3562
- loadfile time    = 0.00067 sec
+ loadfile time    = 0.00104 sec
 the tilesize = 16
 SpGEMM nnzCub = 3562
-CSR to Tile conversion uses 3.95 ms
+CSR to Tile conversion uses 13.19 ms
 tile space overhead = 0.04 MB
 step1 ----Calculate the number and tile-column index of tiles of matrixC---
-step1 ---------------------- Runtime is  5.06 ms-------------------------
+step1 ---------------------- Runtime is  2.70 ms-------------------------
 
 step2 --------Calculate the number of nonzeros of each tile of matrixC-----
-step2 ---------------------- Runtime is  0.25 ms-------------------------
+step2 ---------------------- Runtime is  0.17 ms-------------------------
 
 step3 ---------Calculate the val&col of nonzeros of matrixC-------------
-step3 ---------------------- Runtime is  0.17 ms------------------------
+step3 ---------------------- Runtime is  0.10 ms------------------------
 
------------------------Malloc uses 0.35 ms-------------------------------
+-----------------------Malloc uses 0.18 ms-------------------------------
 Non-empty tiles of C = 223
 nnzC = 3562
-CUDA  TileSpGEMM runtime is 5.84 ms, gflops = 0.00
+CUDA  TileSpGEMM runtime is 3.15 ms, gflops = 0.00
 -------------------------------check----------------------------------------
 tile to CSR conversion complete!
 
@@ -30,7 +30,7 @@ tile to CSR conversion complete!
  - cuda SpGEMM completed!
 
 nnzC = 3562, nnzCub = 3562, Compression rate = 1.00
-CUDA  cuSPARSE SpGEMM runtime is 15.1580 ms, GFlops = 0.0005
+CUDA  cuSPARSE SpGEMM runtime is 14.2080 ms, GFlops = 0.0005
 
 Validating results...
 [PASSED] nnzC = 3562

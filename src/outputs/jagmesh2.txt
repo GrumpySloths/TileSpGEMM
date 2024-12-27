@@ -4,24 +4,24 @@ device_id = 0
 Device [ 0 ] NVIDIA GeForce RTX 2060 SUPER @ 1650.00 MHz
 MAT: -------------- ../datasets/jagmesh2/jagmesh2.mtx --------------
 input matrix A: ( 1009, 1009 ) nnz = 6865
- loadfile time    = 0.00032 sec
+ loadfile time    = 0.00062 sec
 the tilesize = 16
 SpGEMM nnzCub = 47075
-CSR to Tile conversion uses 5.97 ms
+CSR to Tile conversion uses 4.66 ms
 tile space overhead = 0.09 MB
 step1 ----Calculate the number and tile-column index of tiles of matrixC---
-step1 ---------------------- Runtime is  4.71 ms-------------------------
+step1 ---------------------- Runtime is  7.72 ms-------------------------
 
 step2 --------Calculate the number of nonzeros of each tile of matrixC-----
-step2 ---------------------- Runtime is  0.20 ms-------------------------
+step2 ---------------------- Runtime is  0.22 ms-------------------------
 
 step3 ---------Calculate the val&col of nonzeros of matrixC-------------
-step3 ---------------------- Runtime is  0.24 ms------------------------
+step3 ---------------------- Runtime is  0.22 ms------------------------
 
------------------------Malloc uses 0.23 ms-------------------------------
+-----------------------Malloc uses 0.19 ms-------------------------------
 Non-empty tiles of C = 1448
 nnzC = 18179
-CUDA  TileSpGEMM runtime is 5.38 ms, gflops = 0.02
+CUDA  TileSpGEMM runtime is 8.36 ms, gflops = 0.01
 -------------------------------check----------------------------------------
 tile to CSR conversion complete!
 
@@ -30,7 +30,7 @@ tile to CSR conversion complete!
  - cuda SpGEMM completed!
 
 nnzC = 18179, nnzCub = 47075, Compression rate = 2.59
-CUDA  cuSPARSE SpGEMM runtime is 15.6970 ms, GFlops = 0.0060
+CUDA  cuSPARSE SpGEMM runtime is 17.5000 ms, GFlops = 0.0054
 
 Validating results...
 [PASSED] nnzC = 18179

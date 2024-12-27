@@ -4,24 +4,24 @@ device_id = 0
 Device [ 0 ] NVIDIA GeForce RTX 2060 SUPER @ 1650.00 MHz
 MAT: -------------- ../datasets/gyro/gyro.mtx --------------
 input matrix A: ( 17361, 17361 ) nnz = 1021159
- loadfile time    = 0.10748 sec
+ loadfile time    = 0.16993 sec
 the tilesize = 16
 SpGEMM nnzCub = 77897567
-CSR to Tile conversion uses 12.27 ms
+CSR to Tile conversion uses 12.76 ms
 tile space overhead = 10.85 MB
 step1 ----Calculate the number and tile-column index of tiles of matrixC---
-step1 ---------------------- Runtime is  1.78 ms-------------------------
+step1 ---------------------- Runtime is  2.23 ms-------------------------
 
 step2 --------Calculate the number of nonzeros of each tile of matrixC-----
-step2 ---------------------- Runtime is  2.13 ms-------------------------
+step2 ---------------------- Runtime is  2.14 ms-------------------------
 
 step3 ---------Calculate the val&col of nonzeros of matrixC-------------
-step3 ---------------------- Runtime is  9.06 ms------------------------
+step3 ---------------------- Runtime is  9.39 ms------------------------
 
------------------------Malloc uses 3.13 ms-------------------------------
+-----------------------Malloc uses 3.30 ms-------------------------------
 Non-empty tiles of C = 198952
-nnzC = 6962070
-CUDA  TileSpGEMM runtime is 16.12 ms, gflops = 9.66
+nnzC = 6960755
+CUDA  TileSpGEMM runtime is 17.07 ms, gflops = 9.13
 -------------------------------check----------------------------------------
 tile to CSR conversion complete!
 
@@ -30,11 +30,11 @@ tile to CSR conversion complete!
  - cuda SpGEMM completed!
 
 nnzC = 5777919, nnzCub = 77897567, Compression rate = 13.48
-CUDA  cuSPARSE SpGEMM runtime is 73.6530 ms, GFlops = 2.1153
+CUDA  cuSPARSE SpGEMM runtime is 83.5310 ms, GFlops = 1.8651
 
 Validating results...
-[NOT PASSED] nnzC = 5777919, nnzC_golden = 6962070
+[NOT PASSED] nnzC = 5777919, nnzC_golden = 6960755
 [NOT PASSED] row_pointer, #err = 17360
-[NOT PASSED] column_index & value, #err = 5775628 (99.96% #nnz)
+[NOT PASSED] column_index & value, #err = 5775733 (99.96% #nnz)
 ---------------------------------------------------------------
 ---------------------------------------------------------------

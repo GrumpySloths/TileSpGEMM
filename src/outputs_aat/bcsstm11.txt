@@ -1,0 +1,40 @@
+--------------------------------!!!!!!!!------------------------------------
+device_id = 0
+---------------------------------------------------------------
+Device [ 0 ] NVIDIA GeForce RTX 2060 SUPER @ 1650.00 MHz
+MAT: -------------- ../datasets/bcsstm11/bcsstm11.mtx --------------
+input matrix A: ( 1473, 1473 ) nnz = 1473
+ loadfile time    = 0.00028 sec
+the tilesize = 16
+SpGEMM nnzCub = 1473
+CSR to Tile conversion uses 15.08 ms
+tile space overhead = 0.02 MB
+step1 ----Calculate the number and tile-column index of tiles of matrixC---
+step1 ---------------------- Runtime is  1.61 ms-------------------------
+
+step2 --------Calculate the number of nonzeros of each tile of matrixC-----
+step2 ---------------------- Runtime is  0.35 ms-------------------------
+
+step3 ---------Calculate the val&col of nonzeros of matrixC-------------
+step3 ---------------------- Runtime is  0.17 ms------------------------
+
+-----------------------Malloc uses 0.40 ms-------------------------------
+Non-empty tiles of C = 93
+nnzC = 1473
+CUDA  TileSpGEMM runtime is 2.54 ms, gflops = 0.00
+-------------------------------check----------------------------------------
+tile to CSR conversion complete!
+
+--------------- SpGEMM (using cuSPARSE) ---------------
+ - cuda SpGEMM start! Benchmark runs 1 times.
+ - cuda SpGEMM completed!
+
+nnzC = 1473, nnzCub = 1473, Compression rate = 1.00
+CUDA  cuSPARSE SpGEMM runtime is 11.8080 ms, GFlops = 0.0002
+
+Validating results...
+[PASSED] nnzC = 1473
+[PASSED] row_pointer
+[PASSED] column_index & value
+---------------------------------------------------------------
+---------------------------------------------------------------

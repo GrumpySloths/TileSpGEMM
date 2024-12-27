@@ -1,0 +1,17 @@
+../../../datasets/gyro_m/gyro_m.mtx,../../../datasets/gyro_m/gyro_m.mtx,17361,17361,340431,8657751,1925973,4.495261,17.442000,0.992748,0
+./datasets/1138_bus/1138_bus.mtx,./datasets/1138_bus/1138_bus.mtx,1138,1138,4054,18138,11142,1.627894,4.305200,0.008426,0
+./datasets/bcsstm11/bcsstm11.mtx,./datasets/bcsstm11/bcsstm11.mtx,1473,1473,1473,1473,1473,1.000000,3.184800,0.000925,0
+./datasets/bcsstm24/bcsstm24.mtx,./datasets/bcsstm24/bcsstm24.mtx,3562,3562,3562,3562,3562,1.000000,2.944200,0.002420,0
+./datasets/c-53/c-53.mtx,./datasets/c-53/c-53.mtx,30235,30235,372213,191127691,43353305,4.408607,3577.856400,0.106839,0
+./datasets/can_445/can_445.mtx,./datasets/can_445/can_445.mtx,445,445,3809,33307,11193,2.975699,7.349000,0.009064,0
+./datasets/delaunay_n17/delaunay_n17.mtx,./datasets/delaunay_n17/delaunay_n17.mtx,131072,131072,786352,4954586,2715876,1.824305,12.961200,0.764526,0
+./datasets/exdata_1/exdata_1.mtx,./datasets/exdata_1/exdata_1.mtx,6001,6001,2269501,3390807001,0,inf,5.656400,1198.927587,0
+./datasets/gyro/gyro.mtx,./datasets/gyro/gyro.mtx,17361,17361,1021159,77897567,5777919,13.481942,173.416600,0.898387,0
+./datasets/gyro_m/gyro_m.mtx,./datasets/gyro_m/gyro_m.mtx,17361,17361,340431,8657751,1925973,4.495261,14.910000,1.161335,0
+./datasets/jagmesh2/jagmesh2.mtx,./datasets/jagmesh2/jagmesh2.mtx,1009,1009,6865,47075,18179,2.589526,3.145000,0.029936,0
+./datasets/nemeth12/nemeth12.mtx,./datasets/nemeth12/nemeth12.mtx,9506,9506,446818,21402666,977388,21.897819,24.689400,1.733753,0
+./datasets/nv1/nv1.mtx,./datasets/nv1/nv1.mtx,75468,75468,2449194,90134026,14632334,6.159921,218.324400,0.825689,0
+./datasets/pkustk07/pkustk07.mtx,./datasets/pkustk07/pkustk07.mtx,16860,16860,2418804,410021730,13944528,29.403773,1856.964000,0.441604,0
+./datasets/poisson3Db/poisson3Db.mtx,./datasets/poisson3Db/poisson3Db.mtx,85623,85623,2374949,84407251,21855903,3.861989,241.449800,0.699170,0
+./datasets/watt_2/watt_2.mtx,./datasets/watt_2/watt_2.mtx,1856,1856,11550,82066,45632,1.798431,4.828800,0.033990,0
+./datasets/watt_2/watt_2.mtx,./datasets/watt_2/watt_2.mtx,1856,1856,11550,82066,45632,1.798431,5.397400,0.030409,0

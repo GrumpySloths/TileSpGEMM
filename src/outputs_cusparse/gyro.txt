@@ -1,0 +1,21 @@
+---------------------------------------------------------------
+PRECISION = 32-bit Single Precision
+Benchmark REPEAT = 5
+---------------------------------------------------------------
+device_id = 0
+check_result = 0
+A: -------------- ./datasets/gyro/gyro.mtx --------------
+input matrix A: ( 17361, 17361 ) nnz = 1021159
+B: -------------- ./datasets/gyro/gyro.mtx --------------
+input matrix B: ( 17361, 17361 ) nnz = 1021159
+SpGEMM flops = 77897567.
+---------------------------------------------------------------
+Device [ 0 ] NVIDIA GeForce RTX 2060 SUPER @ 1650.00 MHz
+
+--------------- SpGEMM (using cuSPARSE) ---------------
+ - cuda SpGEMM start! Benchmark runs 5 times.
+ - cuda SpGEMM completed!
+
+nnzC = 5777919, nnzCub = 77897567, Compression rate = 13.48
+CUDA  cuSPARSE SpGEMM runtime is 173.4166 ms, GFlops = 0.8984
+---------------------------------------------------------------

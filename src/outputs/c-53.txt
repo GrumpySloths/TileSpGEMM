@@ -4,24 +4,24 @@ device_id = 0
 Device [ 0 ] NVIDIA GeForce RTX 2060 SUPER @ 1650.00 MHz
 MAT: -------------- ../datasets/c-53/c-53.mtx --------------
 input matrix A: ( 30235, 30235 ) nnz = 372213
- loadfile time    = 0.04099 sec
+ loadfile time    = 0.05600 sec
 the tilesize = 16
 SpGEMM nnzCub = 191127691
-CSR to Tile conversion uses 18.76 ms
+CSR to Tile conversion uses 18.27 ms
 tile space overhead = 4.31 MB
 step1 ----Calculate the number and tile-column index of tiles of matrixC---
-step1 ---------------------- Runtime is  2.45 ms-------------------------
+step1 ---------------------- Runtime is  2.64 ms-------------------------
 
 step2 --------Calculate the number of nonzeros of each tile of matrixC-----
-step2 ---------------------- Runtime is  4.49 ms-------------------------
+step2 ---------------------- Runtime is  4.46 ms-------------------------
 
 step3 ---------Calculate the val&col of nonzeros of matrixC-------------
-step3 ---------------------- Runtime is  29.57 ms------------------------
+step3 ---------------------- Runtime is  29.56 ms------------------------
 
------------------------Malloc uses 12.55 ms-------------------------------
+-----------------------Malloc uses 12.61 ms-------------------------------
 Non-empty tiles of C = 629292
-nnzC = 43289251
-CUDA  TileSpGEMM runtime is 49.07 ms, gflops = 7.79
+nnzC = 43288038
+CUDA  TileSpGEMM runtime is 49.29 ms, gflops = 7.76
 -------------------------------check----------------------------------------
 tile to CSR conversion complete!
 
@@ -30,11 +30,11 @@ tile to CSR conversion complete!
  - cuda SpGEMM completed!
 
 nnzC = 43353305, nnzCub = 191127691, Compression rate = 4.41
-CUDA  cuSPARSE SpGEMM runtime is 244.2560 ms, GFlops = 1.5650
+CUDA  cuSPARSE SpGEMM runtime is 269.7700 ms, GFlops = 1.4170
 
 Validating results...
-[NOT PASSED] nnzC = 43353305, nnzC_golden = 43289251
+[NOT PASSED] nnzC = 43353305, nnzC_golden = 43288038
 [NOT PASSED] row_pointer, #err = 30235
-[NOT PASSED] column_index & value, #err = 43350054 (99.99% #nnz)
+[NOT PASSED] column_index & value, #err = 43347812 (99.99% #nnz)
 ---------------------------------------------------------------
 ---------------------------------------------------------------

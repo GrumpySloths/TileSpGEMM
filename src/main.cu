@@ -106,11 +106,11 @@ int main(int argc, char ** argv)
         int *cscRowIdxA;
         MAT_VAL_TYPE *cscValA ;
     
-        if (matrixA->m == matrixA->n && matrixA->isSymmetric)
-        {
-           printf("matrix AAT does not do symmetric matrix. Exit.\n");
-           return 0;
-        }
+        // if (matrixA->m == matrixA->n && matrixA->isSymmetric)
+        // {
+        //    printf("matrix AAT does not do symmetric matrix. Exit.\n");
+        //    return 0;
+        // }
 
         matrixB->m = matrixA->n ;
         matrixB->n = matrixA->m ;

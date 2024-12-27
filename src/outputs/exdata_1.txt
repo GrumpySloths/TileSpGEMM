@@ -4,24 +4,24 @@ device_id = 0
 Device [ 0 ] NVIDIA GeForce RTX 2060 SUPER @ 1650.00 MHz
 MAT: -------------- ../datasets/exdata_1/exdata_1.mtx --------------
 input matrix A: ( 6001, 6001 ) nnz = 2269501
- loadfile time    = 0.21487 sec
+ loadfile time    = 0.28436 sec
 the tilesize = 16
 SpGEMM nnzCub = 3390807001
-CSR to Tile conversion uses 29.52 ms
+CSR to Tile conversion uses 30.90 ms
 tile space overhead = 20.06 MB
 step1 ----Calculate the number and tile-column index of tiles of matrixC---
-step1 ---------------------- Runtime is  2.13 ms-------------------------
+step1 ---------------------- Runtime is  2.51 ms-------------------------
 
 step2 --------Calculate the number of nonzeros of each tile of matrixC-----
-step2 ---------------------- Runtime is  9.60 ms-------------------------
+step2 ---------------------- Runtime is  9.57 ms-------------------------
 
 step3 ---------Calculate the val&col of nonzeros of matrixC-------------
-step3 ---------------------- Runtime is  270.87 ms------------------------
+step3 ---------------------- Runtime is  277.19 ms------------------------
 
------------------------Malloc uses 3.92 ms-------------------------------
+-----------------------Malloc uses 3.91 ms-------------------------------
 Non-empty tiles of C = 47638
-nnzC = 11270158
-CUDA  TileSpGEMM runtime is 286.55 ms, gflops = 23.67
+nnzC = 11270172
+CUDA  TileSpGEMM runtime is 293.21 ms, gflops = 23.13
 -------------------------------check----------------------------------------
 tile to CSR conversion complete!
 
@@ -30,7 +30,7 @@ tile to CSR conversion complete!
  - cuda SpGEMM completed!
 
 nnzC = 0, nnzCub = 3390807001, Compression rate =  inf
-CUDA  cuSPARSE SpGEMM runtime is 11.8250 ms, GFlops = 573.4980
+CUDA  cuSPARSE SpGEMM runtime is 12.6430 ms, GFlops = 536.3928
 cuSPARSE failed!
 ---------------------------------------------------------------
 ---------------------------------------------------------------
